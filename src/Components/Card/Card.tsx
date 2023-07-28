@@ -21,10 +21,10 @@ const Card = () => {
                                 <p className='card-price'>$149.99</p>
                                 <p className='card-reduce-price'>$169.99</p>
                             </div>
-                            <div className='card-button'>
+                            <button className='card-button'>
                                 <img className='card-cart-svg' src={iconCart} alt="Cart" />
                                 Add to Cart
-                            </div>
+                            </button>
                         </div>
                     </div>
 

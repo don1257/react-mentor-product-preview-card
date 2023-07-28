@@ -102,4 +102,10 @@
 .card-cart-svg{
     max-height: 16px;
     max-width: 16px;
+    padding-right: 1em;
+}
+
+.card-button:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
 }
