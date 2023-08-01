@@ -1,8 +1,20 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /*text-align: center;*/
-
+@media (max-width: 767px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+  }
 }
+
+@media (min-width: 768px) {
+  .App {
+    display: flex;
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    background-color: hsl(30, 38%, 92%);
+  }
+}
+

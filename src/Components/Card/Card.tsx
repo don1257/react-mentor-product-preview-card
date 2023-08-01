@@ -1,8 +1,12 @@
 import './Card.css'
 import productMobile from '../../assets/image-product-mobile.jpg'
+import productDesktop from '../../assets/image-product-desktop.jpg'
 import iconCart from '../../assets/icon-cart.svg'
+import CartSVG from "../Svgs/CartSVG";
 
 const Card = () => {
+
+    const isMobile = window.innerWidth <= 767;
 
     return (
         <>
@@ -10,7 +14,7 @@ const Card = () => {
 
                 <div className='card'>
                     <img
-                        src={productMobile}
+                        src={isMobile ? productMobile : productDesktop}
                     />
                     <div className='card-content'>
                         <div className='card-text-container'>
@@ -22,10 +26,11 @@ const Card = () => {
                                 <p className='card-reduce-price'>$169.99</p>
                             </div>
                             <button className='card-button'>
-                                <img className='card-cart-svg' src={iconCart} alt="Cart" />
-                                Add to Cart
+                                <CartSVG/>
+                                <p style={{margin: 0, marginLeft: '0.75em'}}> Add to Cart </p>
                             </button>
                         </div>
+
                     </div>
 
 
