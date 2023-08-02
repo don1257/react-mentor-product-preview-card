@@ -12,9 +12,9 @@ function App() {
         {/*<img*/}
         {/*  src={mobileDesign}*/}
         {/*/>*/}
-        {/*  <img*/}
-        {/*      src={desktopDesign}*/}
-        {/*  />*/}
+          <img
+              src={desktopDesign}
+          />
       </div>
 
   );

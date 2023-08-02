@@ -1,12 +1,26 @@
 import './Card.css'
 import productMobile from '../../assets/image-product-mobile.jpg'
 import productDesktop from '../../assets/image-product-desktop.jpg'
-import iconCart from '../../assets/icon-cart.svg'
 import CartSVG from "../Svgs/CartSVG";
+import {useEffect, useState} from "react";
 
 const Card = () => {
 
-    const isMobile = window.innerWidth <= 767;
+    // const isMobile = window.innerWidth <= 767;
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 767);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <>

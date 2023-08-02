@@ -1,21 +1,5 @@
 * {
-    margin-top: 0;
-}
-
-.card-button {
-    align-items: center;
-    background-color: hsl(158, 36%, 37%);
-    border-radius: 10px;
-    color: white;
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    height: 45px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 290px;
+    margin-top: 0px;
 }
 
 .card-button:hover {
@@ -37,33 +21,6 @@
     margin-top: 20px;
 }
 
-@media (min-width: 768px) {
-    .card {
-        height: 450px;
-        margin-top: 10px;
-        width: 600px;
-        display: flex;
-        background-color: red;
-    }
-
-    .card-container img {
-        border-radius: 10px 10px 0 0;
-        display: block;
-        height: 450px;
-        margin-bottom: 0px;
-        width: 300px;
-    }
-
-    .card-content {
-        background-color: grey;
-        border-radius: 0px 0px 10px 10px;
-        display: flex;
-        height: 450px;
-        justify-content: center;
-        width: 300px;
-    }
-}
-
 .card-description {
     color: hsl(228, 12%, 48%);
     font-family: 'Montserrat', sans-serif;
@@ -78,17 +35,8 @@
     font-size: 32px;
 }
 
-.card-reduce-price {
-    color: hsl(228, 12%, 48%);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    margin-top: 0.75em;
-    text-decoration: line-through;
-}
-
 .card-text-container {
-    max-width: 90%;
+    max-width: 80%;
 }
 
 .card-title {
@@ -103,11 +51,107 @@
     grid-template-columns: 1fr 1fr; /* Two equal columns */
 }
 
+.card-reduce-price {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 0.75em;
+    margin-left: 1.0rem;
+    text-decoration: line-through;
+}
+
+@media (min-width: 768px) {
+    .card {
+        height: 450px;
+        margin-top: 10px;
+        width: 600px;
+        display: flex;
+
+    }
+
+    .card-container img {
+        border-radius: 10px 0px 0px 10px;
+        display: block;
+        height: 450px;
+        margin-bottom: 0px;
+        width: 300px;
+    }
+
+    /*.card-reduce-price {*/
+    /*    color: hsl(228, 12%, 48%);*/
+    /*    font-family: 'Montserrat', sans-serif;*/
+    /*    font-size: 13px;*/
+    /*    font-weight: 500;*/
+    /*    margin-top: 0.75em;*/
+    /*    margin-left: 1.0rem;*/
+    /*    text-decoration: line-through;*/
+    /*}*/
+
+    .card-content {
+        background-color: white;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        height: 450px;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .card-button {
+        align-items: center;
+        background-color: hsl(158, 36%, 37%);
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        height: 50px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 235px;
+    }
+}
+
 @media (max-width: 767px) {
     .card {
         height: 610px;
-        margin-top: 10px;
+        /*margin-top: 10px;*/
         width: 345px;
+    }
+
+    /*.card-reduce-price {*/
+    /*    color: hsl(228, 12%, 48%);*/
+    /*    font-family: 'Montserrat', sans-serif;*/
+    /*    font-size: 13px;*/
+    /*    font-weight: 500;*/
+    /*    margin-top: 0.75em;*/
+    /*    text-decoration: line-through;*/
+    /*}*/
+
+
+    .card-button {
+        align-items: center;
+        background-color: hsl(158, 36%, 37%);
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        height: 45px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 290px;
+    }
+
+    .card-container-price {
+        display: grid;
+        width: 95%;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        grid-template-rows: 3rem;
     }
 
     /*.card-button {*/
