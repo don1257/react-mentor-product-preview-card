@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
 import Card from "./Components/Card/Card";
-import mobileDesign from "./assets/mobile-design.jpg"
-import desktopDesign from "./assets/desktop-design.jpg"
 
 function App() {
   return (
@@ -12,9 +10,7 @@ function App() {
         {/*<img*/}
         {/*  src={mobileDesign}*/}
         {/*/>*/}
-          <img
-              src={desktopDesign}
-          />
+
       </div>
 
   );
