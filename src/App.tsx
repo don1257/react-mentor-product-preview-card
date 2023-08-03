@@ -7,10 +7,6 @@ function App() {
       <div className='App'>
         <Card></Card>
           <br/>
-        {/*<img*/}
-        {/*  src={mobileDesign}*/}
-        {/*/>*/}
-
       </div>
 
   );
