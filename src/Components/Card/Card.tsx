@@ -6,8 +6,6 @@ import {useEffect, useState} from "react";
 
 const Card = () => {
 
-    // const isMobile = window.innerWidth <= 767;
-
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
 
     useEffect(() => {
